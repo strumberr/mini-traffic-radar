@@ -32,13 +32,9 @@ avg_speed_list = []
 
 number_loops = []
 
-
-
-
 while True:
     led.value(1)
     led2.value(0)
-    
     
     if not button.value():
         oled.fill(0)
@@ -49,8 +45,6 @@ while True:
         led.value(0)
         led2.value(1)
         break
-
-    
 
     while True:
         
