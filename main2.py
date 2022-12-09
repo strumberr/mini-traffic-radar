@@ -205,7 +205,9 @@ while True:
                 
                 print(decimal_points_cms)
                 
-                lcd.putstr("-")
+                str_time = str(time_total_sec)
+                
+                lcd.putstr(str_time + " sec. \n")
                 
                 lcd.putstr(decimal_points_cms + " cm/s \n")
                 
@@ -280,7 +282,9 @@ while True:
                 oled.text(f"Avg. {'%.2f' % average_speed_kmh} km/h", 0, 30)
                 oled.show()
                 
-                lcd.putstr("-")
+                str_time = str(time_total_sec)
+                
+                lcd.putstr(str_time + " sec. \n")
                 
                 lcd.putstr(decimal_points_cms + " cm/s \n")
                 
